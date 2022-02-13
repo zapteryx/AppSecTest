@@ -91,7 +91,7 @@
 
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('6LcnyWQeAAAAAKU93nb1kCKOgS0NMKz7ZGtLlzTK', { action: 'Register' }).then(token => {
+            grecaptcha.execute('token', { action: 'Register' }).then(token => {
                 document.getElementById("g-recaptcha-response").value = token;
             });
         })
