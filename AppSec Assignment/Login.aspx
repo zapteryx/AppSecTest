@@ -26,7 +26,7 @@
 
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('6LcnyWQeAAAAAKU93nb1kCKOgS0NMKz7ZGtLlzTK', { action: 'Login' }).then(token => {
+            grecaptcha.execute('token', { action: 'Login' }).then(token => {
                 document.getElementById("g-recaptcha-response").value = token;
             });
         })
